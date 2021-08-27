@@ -8,6 +8,19 @@
   background-size: cover;
 
   background-position: center;
+
+  @media screen and(max-width: 767px) {
+    width: 480px;
+  }
+
+  @media screen and(min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
 }
 
 .hero__button {
@@ -44,6 +57,11 @@
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .backdrop {
@@ -54,23 +72,43 @@
   height: 100%;
   background-color: #0000001a;
 
+  overflow-y: scroll;
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
+
+  @media screen and(max-width: 767px) {
+    padding: 93px 15px 94px;
+  }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-height: 609px;
-  min-width: 450px;
+  @media screen and(max-width: 767px) {
+    position: relative;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   background-color: $main-background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and(min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 609px;
+    max-width: 450px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    min-height: 581px;
+    min-width: 528px;
+  }
 }
 
 .is-hidden {
@@ -102,7 +140,8 @@
 
   @include mainTransition(fill);
 
-  .modal__button-close:hover & {
+  .modal__button-close:hover &,
+  .modal__button-close:focus & {
     fill: $accent-color;
   }
 }
@@ -112,9 +151,13 @@
   font-size: 20px;
   line-height: 1.15;
   margin-bottom: 12px;
-  margin-top: 40px;
 
   color: $title-text-color;
+
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+    margin-top: 0;
+  }
 }
 
 .modal-form {
@@ -141,7 +184,6 @@
   padding-bottom: 10px;
   @extend %marginAuto;
   margin-top: 30px;
-  margin-bottom: 40px;
 
   font-weight: 700;
   font-size: 16px;
@@ -167,7 +209,7 @@
 }
 
 .policy__link {
-  margin-left: 4px;
+  margin-left: 2px;
   text-decoration: underline;
   color: $accent-color;
 }
@@ -175,6 +217,11 @@
 .policy__field {
   display: flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+
+  @media screen and(max-width: 767px) {
+  }
 }
 
 .form__label {
@@ -194,6 +241,10 @@
     border: 1px solid $accent-color;
     border-radius: 4px;
     outline: transparent;
+  }
+
+  @media screen and(max-width: 1199px) {
+    width: 370px;
   }
 }
 
@@ -262,56 +313,4 @@
 
 .modal-form__wrap {
   position: relative;
-}
-
-@media screen and(max-width: 767px) {
-  .hero {
-    // padding: 118px 0;
-    width: 480px;
-    // background-size: cover;
-  }
-
-  // .hero__title {
-  //   font-size: 26px;
-  //   line-height: 1.62;
-  // }
-
-  // .modal {
-  //   min-height: 609px;
-  //   min-width: 450px;
-  // }
-}
-
-@media screen and(min-width: 768px) {
-  .hero {
-    max-width: 768px;
-    // background-size: cover;
-  }
-
-  // .hero__title {
-  //   font-size: 26px;
-  //   line-height: 1.62;
-  // }
-
-  // .modal {
-  //   min-height: 609px;
-  //   min-width: 450px;
-  // }
-}
-
-@media screen and(min-width: 1200px) {
-  .hero {
-    max-width: 1600px;
-    padding: 200px 0;
-  }
-
-  .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-
-  .modal {
-    min-height: 581px;
-    min-width: 528px;
-  }
 }

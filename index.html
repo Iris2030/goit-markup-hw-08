@@ -20,41 +20,86 @@
     <!--page header  -->
     <header class="page-header">
         <!-- page navigation -->
+         
         <div class="container container--flex">
             <nav class="page-nav">
-
+    
                 <a href="/index.html" class="logo">
                     Web<span class="logo__accent">Studio</span>
                 </a>
-
+    
                 <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html"
-                            class=" site-nav__link site-nav__link--current">Студия</a>
+                    <li class="site-nav__item"><a href="./index.html" class=" site-nav__link ">Студия</a>
                     </li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class=" site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html"
+                            class=" site-nav__link site-nav__link--current">Портфолио</a></li>
                     <li class="site-nav__item"><a href="#" class=" site-nav__link">Контакты</a></li>
                 </ul>
-
+    
             </nav>
-
+    
             <!-- contacts -->
-
+    
             <ul class="auth-nav">
-
+    
                 <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class=" auth-nav__link">
                         <svg class="auth-nav__icon" width="16" height="12">
                             <use href="./imges/icons.svg#icon-envelop"></use>
                         </svg>
                         info@devstudio.com </a></li>
+    
+    
+                <li class="auth-nav__item"><a href="tel:+380961111111" class=" auth-nav__link">
+                        <svg class="auth-nav__icon" width="10" height="16">
+                            <use href="./imges/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
+                    </ul>
+                </div>  
 
+            
+        <div class="mobile-menu">
 
+        <button type="button" class="menu-button is-open" data-menu-button aria-expanded="false" aria-controls="menu-container"
+            data-menu-button>
+            <svg class="menu-button__icons" width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="menu-button__burger-icon" href="./imges/icons.svg#icon-adaptive-burger"></use>
+                <use class="menu-button__cross-icon" href="./imges/icons.svg#icon-adaptive-cross"></use>
+            </svg>
+        </button>
+        
+        <div class="page-nav__menu-container" id="menu-container" data-menu>
+        
+            <ul class="site-nav--mobile">
+                <li class="site-nav__item"><a href="./index.html" class=" site-nav__link ">Студия</a>
+                </li>
+                <li class="site-nav__item"><a href="./portfolio.html" class=" site-nav__link">Портфолио</a></li>
+                <li class="site-nav__item"><a href="#" class=" site-nav__link">Контакты</a></li>
+            </ul>
+        
+            <ul class="auth-nav--mobile">
+        
+                <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class=" auth-nav__link">
+                        <svg class="auth-nav__icon" width="16" height="12">
+                            <use href="./imges/icons.svg#icon-envelop"></use>
+                        </svg>
+                        info@devstudio.com </a></li>
+        
                 <li class="auth-nav__item"><a href="tel:+380961111111" class=" auth-nav__link">
                         <svg class="auth-nav__icon" width="10" height="16">
                             <use href="./imges/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
-        </div>
+        
+            <ul class="socials-set">
+                <li class="socials-set__item"> <a class="socials-set__link" href="#">Instagram</a></li>
+                <li class="socials-set__item"> <a class="socials-set__link" href="#">Facebook</a></li>
+                <li class="socials-set__item"> <a class="socials-set__link" href="#">Twitter</a></li>
+                <li class="socials-set__item"> <a class="socials-set__link" href="#">Linkedin</a></li>
+            </ul>
+            </div>
+    
     </header>
 
 
@@ -238,7 +283,7 @@
                             alt="фото улыбающегося молодого брюнета в очках с бородой" width="270" height="260">
                         <div class="team-list__text">
                             <h3 class="team-list__title">Игорь Демьяненко</h3>
-                            <p class="team-list__profession">Product Designer</p>
+                            <p class="team-list__text-description">Product Designer</p>
 
                             <ul class="socials socials--margin-top">
                                 <li class="socials__item">
@@ -280,7 +325,7 @@
                             alt="фото привлекательной молодой блондинки в очках" width="270" height="260">
                         <div class="team-list__text">
                             <h3 class="team-list__title">Ольга Репина</h3>
-                            <p class="team-list__profession">Frontend Developer</p>
+                            <p class="team-list__text-description">Frontend Developer</p>
 
                             <ul class="socials socials--margin-top">
                                 <li class="socials__item">
@@ -320,7 +365,7 @@
                             alt="фото улыбающегося темно-русого молодого мужчины" width="270" height="260">
                         <div class="team-list__text">
                             <h3 class="team-list__title">Николай Тарасов</h3>
-                            <p class="team-list__profession">Marketing</p>
+                            <p class="team-list__text-description">Marketing</p>
 
                             <ul class="socials socials--margin-top">
                                 <li class="socials__item">
@@ -361,7 +406,7 @@
                             alt="фото ухмыляющегося молодого брюнета в очках с бородой" width="270" height="260">
                         <div class="team-list__text">
                             <h3 class="team-list__title">Михаил Ермаков</h3>
-                            <p class="team-list__profession">UI Designer</p>
+                            <p class="team-list__text-description">UI Designer</p>
 
                             <ul class="socials socials--margin-top">
                                 <li class="socials__item">
@@ -461,6 +506,7 @@
 
     <footer class="footer">
         <div class="container container--flex-baseline">
+            <div class="footer__tablet-flex">
             <div>
                 <a href="/index.html" class="logo ">
                     Web<span class="logo__accent--inverse">Studio</span>
@@ -523,6 +569,7 @@
                 </ul>
 
             </div>
+            </div>
 
             <div class="footer-input-box">
                 <b class="footer-bold-text">подпишись на рассылку</b>
@@ -539,7 +586,8 @@
             </div>
         </div>
     </footer>
-
+     
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

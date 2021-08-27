@@ -1,1 +1,186 @@
- 
+.footer {
+  background-color: $footer-hero-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and( max-width: 767px) {
+    width: 480px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.footer__tablet-flex {
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.container--flex-baseline {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-address {
+  color: $main-background-color;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.footer-address__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  @include mainTransition(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-address__item {
+  @media screen and( max-width: 1199px) {
+    margin-bottom: 8px;
+  }
+  @media screen and( min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-bold-text {
+  display: inline-block;
+  color: $main-background-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  @media screen and( max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    margin-left: 165px;
+  }
+
+  @media screen and( min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+
+.footer-form {
+  @media screen and( min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-form__input {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: inherit;
+
+  color: $main-background-color;
+  background-color: $footer-hero-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &:focus {
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    outline: transparent;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  @media screen and( max-width: 1199px) {
+    width: 450px;
+    height: 50px;
+  }
+
+  @media screen and( min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+  }
+}
+
+.footer-form__button {
+  @include centeredFlex();
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  margin-left: 12px;
+
+  background-color: $accent-color;
+  color: $main-background-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  cursor: pointer;
+
+  @include mainTransition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $blue-buttons-hover;
+  }
+
+  @media screen and( max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer-form__icon {
+  fill: $main-background-color;
+  margin-left: 10px;
+}
+
+.footer-input-box {
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and( min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.socials {
+  @media screen and( max-width: 767px) {
+    justify-content: center;
+  }
+}

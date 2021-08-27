@@ -1,5 +1,13 @@
 .section--bg-color {
   background-color: $secondary-background-color;
+
+  @media screen and( max-width: 767px) {
+    min-width: 480px;
+  }
+
+  @media screen and(min-width: 768px) {
+    min-width: 768px;
+  }
 }
 
 .team-list {
@@ -43,15 +51,6 @@
   }
 }
 
-.team-list__title {
-  color: $title-text-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .team-list__img {
   @media screen and(max-width: 767px) {
     width: 450px;
@@ -66,5 +65,29 @@
   @media screen and(min-width: 1200px) {
     width: 270px;
     height: 260px;
+  }
+}
+
+.team-list__title {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-list__text-description {
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team-list__text {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and(min-width: 1200px) {
+    padding-bottom: 30px;
   }
 }
