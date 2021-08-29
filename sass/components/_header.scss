@@ -47,6 +47,8 @@
     top: 90%;
     left: -1px;
 
+    z-index: 999;
+
     background-color: $main-background-color;
 
     &.is-open {

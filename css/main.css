@@ -165,6 +165,7 @@ a {
     width: 100%;
     top: 90%;
     left: -1px;
+    z-index: 999;
     background-color: #ffffff;
   }
   .page-nav__menu-container.is-open {
@@ -1689,9 +1690,6 @@ a {
 }
 
 .gallery__text {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
