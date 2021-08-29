@@ -51,6 +51,48 @@
                         +38 096 111 11 11</a></li>
             </ul>
         </div>
+
+        <div class="mobile-menu">
+        
+            <button type="button" class="menu-button is-open" data-menu-button aria-expanded="false"
+                aria-controls="menu-container" data-menu-button>
+                <svg class="menu-button__icons" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="menu-button__burger-icon" href="./imges/icons.svg#icon-adaptive-burger"></use>
+                    <use class="menu-button__cross-icon" href="./imges/icons.svg#icon-adaptive-cross"></use>
+                </svg>
+            </button>
+        
+            <div class="page-nav__menu-container" id="menu-container" data-menu>
+        
+                <ul class="site-nav--mobile">
+                    <li class="site-nav__item"><a href="./index.html" class=" site-nav__link ">Студия</a>
+                    </li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class=" site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="#" class=" site-nav__link">Контакты</a></li>
+                </ul>
+        
+                <ul class="auth-nav--mobile">
+        
+                    <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class=" auth-nav__link">
+                            <svg class="auth-nav__icon" width="16" height="12">
+                                <use href="./imges/icons.svg#icon-envelop"></use>
+                            </svg>
+                            info@devstudio.com </a></li>
+        
+                    <li class="auth-nav__item"><a href="tel:+380961111111" class=" auth-nav__link">
+                            <svg class="auth-nav__icon" width="10" height="16">
+                                <use href="./imges/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a></li>
+                </ul>
+        
+                <ul class="socials-set">
+                    <li class="socials-set__item"> <a class="socials-set__link" href="#">Instagram</a></li>
+                    <li class="socials-set__item"> <a class="socials-set__link" href="#">Facebook</a></li>
+                    <li class="socials-set__item"> <a class="socials-set__link" href="#">Twitter</a></li>
+                    <li class="socials-set__item"> <a class="socials-set__link" href="#">Linkedin</a></li>
+                </ul>
+            </div>
     </header>
 
     <main>
@@ -72,7 +114,13 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-1.jpg" alt="фото страницы веб-сайта" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery1-desktop1x.jpg 1x, ./imges/gallery1-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery1-tablet1x.jpg 1x, ./imges/gallery1-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery1-mobile1x.jpg 1x, ./imges/gallery1-mobile2x.jpg 2x">
+                            <img class="gallery__image" src="./imges/gallery1-mobile1x.jpg"
+                          alt="фото страницы веб-сайта" width="370" height="294">
+                          </picture>
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -88,7 +136,13 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-2.jpg" alt="фото двух мужчин играющих в баскетбол" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery2-desktop1x.jpg 1x, ./imges/gallery2-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery2-tablet1x.jpg 1x, ./imges/gallery2-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery2-mobile1x.jpg 1x, ./imges/gallery2-mobile2x.jpg 2x">
+                            <img class="gallery__image" src="./imges/gallery2-mobile1x.jpg"
+                          alt="фото двух мужчин играющих в баскетбол" width="370" height="294">
+                          </picture>
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -104,7 +158,13 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-3.jpg" alt="фото логотипа ресторана" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery3-desktop1x.jpg 1x, ./imges/gallery3-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery3-tablet1x.jpg 1x, ./imges/gallery3-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery3-mobile1x.jpg 1x, ./imges/gallery3-mobile2x.jpg 2x">
+                            <img class="gallery__image" src="./imges/gallery3-mobile1x.jpg"
+                         alt="фото логотипа ресторана" width="370" height="294">
+                         </picture>
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -121,7 +181,13 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-4.jpg" alt="фото наушников" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery4-desktop1x.jpg 1x, ./imges/gallery4-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery4-tablet1x.jpg 1x, ./imges/gallery4-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery4-mobile1x.jpg 1x, ./imges/gallery4-mobile2x.jpg 2x">
+                            <img class="gallery__image" src="./imges/gallery4-mobile1x.jpg"
+                         alt="фото наушников" width="370" height="294">
+                         </picture>
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -138,7 +204,14 @@
             <li class="gallery__item">
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-5.jpg" alt="фото коробок" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery5-desktop1x.jpg 1x, ./imges/gallery5-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery5-tablet1x.jpg 1x, ./imges/gallery5-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery5-mobile1x.jpg 1x, ./imges/gallery5-mobile2x.jpg 2x">
+                            <img  class="gallery__image" src="./imges/gallery5-mobile1x.jpg"
+                                  alt="фото коробок" width="370" height="294">
+                        </picture>
+                        
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -155,7 +228,13 @@
             <li class="gallery__item"> 
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-6.jpg" alt="фото монитора со станицей веб-сайта" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery6-desktop1x.jpg 1x, ./imges/gallery6-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery6-tablet1x.jpg 1x, ./imges/gallery6-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery6-mobile1x.jpg 1x, ./imges/gallery6-mobile2x.jpg 2x">
+                            <img class="gallery__image" src="./imges/gallery6-mobile1x.jpg"
+                        alt="фото монитора со станицей веб-сайта" width="370" height="294">
+                        </picture>
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -172,7 +251,13 @@
             <li class="gallery__item"> 
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-7.jpg" alt="фото развернутого журнала" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery7-desktop1x.jpg 1x, ./imges/gallery7-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery7-tablet1x.jpg 1x, ./imges/gallery7-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery7-mobile1x.jpg 1x, ./imges/gallery7-mobile2x.jpg 2x">
+                            <img class="gallery__image" src="./imges/gallery7-mobile1x.jpg"
+                         alt="фото развернутого журнала" width="370" height="294">
+                         </picture>
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -189,7 +274,13 @@
             <li class="gallery__item"> 
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-8.jpg" alt="фото бумажного ярлыка с надписью" width="370" height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery8-desktop1x.jpg 1x, ./imges/gallery8-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery8-tablet1x.jpg 1x, ./imges/gallery8-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery8-mobile1x.jpg 1x, ./imges/gallery8-mobile2x.jpg 2x">
+                            <img class="gallery__image" src="./imges/gallery8-mobile1x.jpg"
+                         alt="фото бумажного ярлыка с надписью" width="370" height="294">
+                         </picture>
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -206,8 +297,13 @@
             <li class="gallery__item"> 
                 <a href="" class="gallery__link">
                     <div class="gallery__overlay">
-                        <img class="gallery__image" src="./imges/img3-9.jpg" alt="фото мужчины печатающего на наутбуке, с открытой веб-страницей" width="370"
-                            height="294">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./imges/gallery9-desktop1x.jpg 1x, ./imges/gallery9-desktop2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="./imges/gallery9-tablet1x.jpg 1x, ./imges/gallery9-tablet2x.jpg 2x">
+                            <source media="(max-width: 480px)" srcset="./imges/gallery9-mobile1x.jpg 1x, ./imges/gallery9-mobile2x.jpg 2x">
+                            <img class="gallery__image" src="./imges/gallery9-mobile1x.jpg"
+                         alt="фото мужчины печатающего на наутбуке, с открытой веб-страницей" width="370" height="294">
+                         </picture>
                         <p class="gallery__overlay-text">
                             Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.
@@ -311,6 +407,8 @@
     </div>
 </footer>
   
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
