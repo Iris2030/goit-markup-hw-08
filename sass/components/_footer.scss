@@ -4,7 +4,6 @@
   padding-bottom: 60px;
 
   @media screen and( max-width: 767px) {
-    width: 480px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -17,6 +16,7 @@
     align-items: baseline;
     justify-content: center;
     text-align: center;
+    margin-bottom: 60px;
   }
 
   @media screen and(min-width: 1200px) {
@@ -36,7 +36,6 @@
   color: $main-background-color;
   font-style: normal;
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .footer-address__link {
